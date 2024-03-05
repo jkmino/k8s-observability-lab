@@ -1,5 +1,5 @@
 echo "---------- Configuring EKS  ----------"
-eksctl create cluster -f infra/cluster.yaml
+eksctl create cluster -f infra/initial-cluster.yaml
 
 echo "---------- server metrics----------"
 kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
